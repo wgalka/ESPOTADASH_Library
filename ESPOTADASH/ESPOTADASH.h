@@ -15,7 +15,7 @@
 
 class ESPOTADASH {
 public:
-  ESPOTADASH(const char* ssid, const char* password, const char* hostName, const char* serverAddress, unsigned long heartbeatInterval, unsigned long registrationInterval, const char* firmwareVersion);
+  ESPOTADASH(const char* ssid, const char* password, const char* serverAddress, unsigned long heartbeatInterval, unsigned long registrationInterval, const char* firmwareVersion);
   void begin();
   void loop();
 

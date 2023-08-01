@@ -1,9 +1,9 @@
 #include "ESPOTADASH.h"
 
-ESPOTADASH::ESPOTADASH(const char* ssid, const char* password, const char* hostName, const char* serverAddress, unsigned long heartbeatInterval, unsigned long registrationInterval, const char* firmwareVersion) {
+ESPOTADASH::ESPOTADASH(const char* ssid, const char* password, const char* serverAddress, unsigned long heartbeatInterval, unsigned long registrationInterval, const char* firmwareVersion) {
   this->ssid = ssid;
   this->password = password;
-  this->hostName = hostName;
+  this->hostName =  WiFi.macAddress().c_str();
   this->serverAddress = serverAddress;
   this->heartbeatInterval = heartbeatInterval;
   this->registrationInterval = registrationInterval;
